@@ -1,0 +1,36 @@
+body {
+    font-family: 'alalias',monospace;
+    min-height: 400px;
+    background-image: url('https://i0.hippopx.com/photos/264/727/644/cent-1-coin-currency-preview.jpg');
+    background-color: #000000;
+    background-size: 110vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    color: white;
+    margin: 0 0 10px;
+  }
+  
+  .page-subtitle {
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .page-logo {
+    width: 100px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right:10px;
+  }

@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(235, 196, 170);
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    background-color: white;
+    margin-top: 100px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+
+}
+section h1 {
+    font-size: 20px;
+}
+header {
+    background-image: url('https://imgix.ranker.com/list_img_v2/12595/932595/original/top-15-marvel-heroes?w=817&h=427&fm=jpg&q=50&fit=crop');
+    background-size: cover;
+    height: 80px;
+    border-radius: 8px;
+}
+
+div {
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    border: 1px;
+    background-color: rgb(125, 125, 209);
+    border-radius: 8px;
+    
+}
+div h2 {
+    font-size: 18px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    border: white solid 8px;
+}
