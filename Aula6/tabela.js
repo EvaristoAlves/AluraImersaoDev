@@ -1,5 +1,27 @@
+var paulo = {
+    nome: "Paulo",
+    vitorias: 2,
+    empates: 5,
+    derrotas: 1,
+    pontos: 0
+}
+var rafa = {
+    nome: "Rafa",
+    vitorias: 3,
+    empates: 5,
+    derrotas: 2,
+    pontos: 0
+}
 
-var jogadores = [Rafa, Paulo]
+rafa.pontos = calculaPontos(rafa)
+paulo.pontos = calculaPontos(paulo)
+
+function calculaPontos(jogador) {
+    var pontos = (jogador.vitorias * 3) + jogador.empates
+    return pontos
+}
+
+var jogadores = [rafa, paulo]
 
 exibirJogadoresNaTela(jogadores)
 
@@ -7,10 +29,10 @@ function exibirJogadoresNaTela(jogadores) {
     var html = ""
     for (var i = 0; i < jogadores.length; i++) {
         html += "<tr><td>" + jogadores[i].nome + "</td>"
-        html += "<td>" + jogadores[i].Vitorias + "</td>"
-        html += "<td>" + jogadores[i].Empates + "</td>"
-        html += "<td>" + jogadores[i].Derrotas + "</td>"
-        html += "<td>" + jogadores[i].Pontos + "</td>"
+        html += "<td>" + jogadores[i].vitorias + "</td>"
+        html += "<td>" + jogadores[i].empates + "</td>"
+        html += "<td>" + jogadores[i].derrotas + "</td>"
+        html += "<td>" + jogadores[i].pontos + "</td>"
         html += "<td><button onClick='adicionarVitoria(" + i + ")'>Vitória</button></td>"
         html += "<td><button onClick='adicionarEmpate(" + i + ")'>Empate</button></td>"
         html += "<td><button onClick='adicionarDerrota(" + i + ")'>Derrota</button></td></tr>"
@@ -21,20 +43,20 @@ function exibirJogadoresNaTela(jogadores) {
 
 function adicionarVitoria(i) {
     var jogador = jogadores[i]
-    jogador.Vitorias++
+    jogador.vitorias++
     jogador.pontos = calculaPontos(jogador)
     exibirJogadoresNaTela(jogadores)
 }
 
 function adicionarEmpate(i) {
     var jogador = jogadores[i]
-    jogador.Empates++
+    jogador.empates++
     jogador.pontos = calculaPontos(jogador)
     exibirJogadoresNaTela(jogadores)
 }
 
 function adicionarDerrota(i) {
     var jogador = jogadores[i]
-    jogador.Derrotas++
+    jogador.derrotas++
     exibirJogadoresNaTela(jogadores)
 }
